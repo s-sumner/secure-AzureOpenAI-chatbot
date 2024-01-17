@@ -11,7 +11,7 @@ Azure OpenAI makes it possible for anyone to create a secure chatbot. You deploy
 Follow these steps to deploy and configure
 
 1. **Create a virtual network with two subnets.** Create a virtual network. Create two subnets. One subnet is for the Azure OpenAI private endpoint (called `snet-private-endpoints`). The other subnet is for the web app to integrate with the virtual network (`snet-integration`)
-1. **Create Azure OpenAI service.** Follow the deployment steps. Networking and disable all network access. Private endpoint connection will be the only way to access the Azure OpenAI service and any models you deploy within it.
+1. **Create Azure OpenAI service.** Follow the deployment steps. Under Networking, disable all network access. The private endpoint connection will be the only way to access the Azure OpenAI service and any models you deploy within it.
 
     Go to the Azure OpenAI Studio. In the studio, go to Deployments on the left and Create a new deployment. This step creates a new model. In the Azure OpenAI Studio, select "Chat" to enter the Chat Playground. Type a user query to test the access. You should get an error message indicating public access is disabled. This is the expected behavior. 
 
